@@ -3,15 +3,15 @@
 #### Table of Contents
 
 1. [Overview](#overview)
-2. [Module Description - What the module does and why it is useful](#module-description)
-3. [Setup - The basics of getting started with etcshells](#setup)
+2. [Module Description](#module-description)
+3. [Setup](#setup)
     * [What etcshells affects](#what-etcshells-affects)
     * [Setup requirements](#setup-requirements)
     * [Beginning with etcshells](#beginning-with-etcshells)
-4. [Usage - Configuration options and additional functionality](#usage)
-5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+4. [Usage](#usage)
+5. [Reference](#reference)
+5. [Limitations](#limitations)
+6. [Development](#development)
 
 ## Overview
 
@@ -34,6 +34,13 @@ Manages /etc/shells file adjusting it to the OS Version.
 Simple example:
 ```puppet
 class { 'etcshells':
+
+etcshells::addshell { 'shellname':
+    shellname => "/bin/shellname",
+}
+
+etcshells::addshell { '/bin/yetanothershell':
+}
 ```
 
 ## Limitations
