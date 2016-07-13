@@ -4,9 +4,9 @@
   "author": "eyp",
   "summary": "manages /etc/shells file",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/NTTCom-MS/eyp-etcshells",
   "project_page": null,
-  "issues_url": null,
+  "issues_url": "https://github.com/NTTCom-MS/eyp-etcshells/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
     {"name":"puppetlabs/concat","version_requirement":">= 1.2.3"}
@@ -14,6 +14,22 @@
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
+      "operatingsystemrelease": [ "6" ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [ "6" ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [ "6" ]
+    },
+    {
+      "operatingsystem": "OEL",
+      "operatingsystemrelease": [ "6" ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
       "operatingsystemrelease": [ "6" ]
     },
     {

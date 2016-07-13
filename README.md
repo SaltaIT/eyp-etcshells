@@ -29,7 +29,7 @@ Manages /etc/shells file adjusting it to the OS Version.
 
 * /etc/shells/etc/shells, will be overwrite. will be overwrite.
 
-### Beginning with etcshells
+## Usage
 
 Simple example:
 ```puppet
@@ -43,7 +43,20 @@ etcshells::addshell { '/bin/yetanothershell':
 }
 ```
 
+## Reference
+
+### classes
+
+#### etchsells
+
+* **shells**: (Array) list of shells (default: default shells for each supported distro)
+
+### defines
+
+#### etcshells::addshell
+
+* **shellname**: Add a shell to /etc/shells
+
 ## Limitations
-* Redhat and derivatives: 6 releases.
-* Ubuntu: 14 releases.
-* Others: unsuported.
+* CentOS 6
+* Ubuntu: 14.04
