@@ -4,9 +4,9 @@
   "author": "eyp",
   "summary": "manages /etc/shells file",
   "license": "Apache-2.0",
-  "source": "https://github.com/NTTCom-MS/eyp-etcshells",
+  "source": "https://github.com/SaltaIT/eyp-etcshells",
   "project_page": null,
-  "issues_url": "https://github.com/NTTCom-MS/eyp-etcshells/issues",
+  "issues_url": "https://github.com/SaltaIT/eyp-etcshells/issues",
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
     {"name":"puppetlabs/concat","version_requirement":">= 1.2.3"}
